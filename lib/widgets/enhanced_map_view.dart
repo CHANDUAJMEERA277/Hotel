@@ -291,6 +291,11 @@ class _EnhancedMapViewState extends State<EnhancedMapView> {
               TileLayer(
                 urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
                 userAgentPackageName: 'com.example.hotel',
+                maxZoom: 19,
+                subdomains: const ['a', 'b', 'c'],
+                additionalOptions: const {
+                  'attribution': '© OpenStreetMap contributors',
+                },
               ),
               MarkerLayer(markers: _buildMarkers()),
             ],

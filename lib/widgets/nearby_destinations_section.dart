@@ -124,6 +124,8 @@ class NearbyDestinationsSection extends StatelessWidget {
                 TileLayer(
                   urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
                   userAgentPackageName: 'com.example.hotel',
+                  maxZoom: 19,
+                  subdomains: const ['a', 'b', 'c'],
                 ),
                 MarkerLayer(
                   markers: [
